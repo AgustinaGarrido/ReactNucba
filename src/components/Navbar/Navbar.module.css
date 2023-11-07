@@ -1,0 +1,93 @@
+.navbarContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white; 
+    color: #000000; 
+    padding: 10px 20px;
+  }
+  
+  .navbarLogo img {
+    width: 100px; 
+    height: auto;
+  }
+  
+  .navbarLinks ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbarLinks li {
+    margin-right: 20px;
+  }
+  
+  .navbarLinks a {
+    text-decoration: none;
+    color: #000000; 
+    font-weight: bold;
+    font-size: 16px; 
+  }
+  
+  .menuIcon {
+    width: 30px; 
+    height: auto;
+    cursor: pointer;
+    
+  }
+  
+ 
+  
+  .modal {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+  .modalOpened{
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+  }
+  
+  .modal ul, .modalOpened ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .modal li, .modalOpened li {
+    margin-bottom: 10px;
+  }
+  
+  .modal a, .modalOpened a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+  }
+  .modal.show {
+    display: block;
+  }
+  .closeIcon{
+    color: red;
+    font-size: 24px;
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .navbarLinks {
+      display: none; 
+    }
+  
+    .menuIcon {
+      display: block; 
+    }
+  }
+  

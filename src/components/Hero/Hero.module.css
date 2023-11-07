@@ -1,0 +1,51 @@
+.heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #FF8600f0; 
+  }
+  .heroImg {
+    max-width: 60vw;
+    height: auto;
+  }
+  .heroText {
+    
+    text-align: center;
+  }
+  
+  .heroH1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .heroP {
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .heroH1 {
+      font-size: 1.5rem; 
+    }
+    .heroP {
+      font-size: 1rem; 
+    }
+  }
+  @media (max-width: 480px) {
+    .heroH1 {
+      font-size: 1.2rem; 
+    }
+    .heroP {
+      font-size: 0.9rem; 
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
