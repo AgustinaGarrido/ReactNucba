@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import styles from './Navbar.module.css'; // Importa el archivo CSS como 'styles'
+import styles from './Navbar.module.css'; 
+import logo from './assets/natura-logo.png'
+import menu from './assets/menu.png'
 
 function Navbar() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -12,7 +14,7 @@ function Navbar() {
   return (
     <nav className={styles.navbarContainer}>
       <div className={styles.navbarLogo}>
-        <img src="../../public/natura-png-transparente.png" alt="Logo de la empresa" />
+        <img src={logo} alt="Logo de la empresa" />
       </div>
       <div className={`${styles.navbarLinks} ${menuVisible ? styles.show : ''}`}>
         <ul>
@@ -29,7 +31,7 @@ function Navbar() {
       </div>
       <img
         className={`${styles.menuIcon} ${!menuVisible ? styles.closeIcon : ''}`}
-        src="../../public/menu.png" /* Cambia a la ruta de tu ícono de menú */
+        src={menu} 
         alt="Ícono de menú"
         onClick={toggleMenu}
       />
