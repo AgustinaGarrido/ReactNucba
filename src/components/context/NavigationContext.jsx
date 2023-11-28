@@ -1,4 +1,3 @@
-// NavigationContext.jsx
 import React, { createContext, useContext, useState } from 'react';
 
 const NavigationContext = createContext();
