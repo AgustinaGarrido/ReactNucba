@@ -9,6 +9,7 @@ function ProductCard(props) {
       <img className={classes.img} src={image} alt={title} />
       <h2 className={classes.h2}>{title}</h2>
       <p className={classes.p}>{description}</p>
+      <button className={classes.button}>Agregar al carrito</button>
     </div>
   );
 }

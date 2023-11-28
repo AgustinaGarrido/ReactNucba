@@ -26,6 +26,13 @@
   .p {
     font-size: 1rem;
   }
+  .button{
+    background-color: orange;
+    padding: 5px;
+    color: white;
+    border-radius: 7px;
+    border-color: #fff;
+  }
   @media (max-width: 768px) {
     .h2 {
       font-size: 1.0rem; 
